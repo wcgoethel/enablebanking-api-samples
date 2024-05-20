@@ -46,14 +46,14 @@ def main():
         print(f"Error response {r.status_code}:", r.text)
         return
 
-    # Requesting available ASPSPs
-    r = requests.get(f"{API_ORIGIN}/aspsps", headers=base_headers)
-    if r.status_code == 200:
-        print("Available ASPSPs:")
-        pprint(r.json()["aspsps"])
-    else:
-        print(f"Error response {r.status_code}:", r.text)
-        return
+    # # Requesting available ASPSPs
+    # r = requests.get(f"{API_ORIGIN}/aspsps", headers=base_headers)
+    # if r.status_code == 200:
+    #     print("Available ASPSPs:")
+    #     pprint(r.json()["aspsps"])
+    # else:
+    #     print(f"Error response {r.status_code}:", r.text)
+    #     return
 
     # Starting authorization
     body = {
